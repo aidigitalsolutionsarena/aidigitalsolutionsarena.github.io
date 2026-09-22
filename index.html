@@ -1,1 +1,1447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>The Naija Agents Fast Deal Closing Prompts | AiDigital Solutions Arena</title>
+
+  <meta
+    name="description"
+    content="Practical AI-powered prompts and resources designed to help Nigerian real estate agents handle prospecting, buyer conversations, follow-ups, objections and deal-closing conversations more effectively."
+  >
+
+  <meta name="theme-color" content="#24113f">
+
+  <style>
+    :root {
+      --purple-dark: #24113f;
+      --purple: #4b2378;
+      --purple-light: #6f3ca3;
+      --gold: #d4af37;
+      --gold-light: #f1d77a;
+      --emerald: #087f5b;
+      --emerald-light: #10a66f;
+      --cream: #faf8f3;
+      --white: #ffffff;
+      --black: #17151b;
+      --gray: #66616c;
+      --light-gray: #eeeaf2;
+      --shadow: 0 14px 40px rgba(36, 17, 63, 0.12);
+      --radius: 18px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: var(--black);
+      background: var(--white);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(1120px, 92%);
+      margin: 0 auto;
+    }
+
+    /* HEADER */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(36, 17, 63, 0.97);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .nav {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      color: var(--white);
+      font-weight: 800;
+      letter-spacing: 0.3px;
+      font-size: 1rem;
+      line-height: 1.2;
+    }
+
+    .brand span {
+      display: block;
+      color: var(--gold-light);
+      font-size: 0.72rem;
+      font-weight: 500;
+      margin-top: 3px;
+      letter-spacing: 0.7px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      font-size: 0.9rem;
+    }
+
+    .nav-links a {
+      color: rgba(255,255,255,0.9);
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--gold-light);
+    }
+
+    .nav-cta {
+      padding: 10px 16px;
+      border-radius: 999px;
+      background: var(--gold);
+      color: var(--purple-dark) !important;
+      font-weight: 800;
+    }
+
+    /* HERO */
+
+    .hero {
+      background:
+        radial-gradient(circle at 80% 20%, rgba(212,175,55,0.18), transparent 30%),
+        linear-gradient(135deg, var(--purple-dark), var(--purple));
+      color: var(--white);
+      padding: 82px 0 76px;
+      overflow: hidden;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      align-items: center;
+      gap: 55px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      color: var(--gold-light);
+      font-size: 0.8rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1.7px;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.35rem, 6vw, 4.5rem);
+      line-height: 1.02;
+      margin-bottom: 22px;
+      letter-spacing: -1.8px;
+    }
+
+    .hero h1 span {
+      color: var(--gold-light);
+    }
+
+    .hero-text {
+      color: rgba(255,255,255,0.86);
+      font-size: 1.08rem;
+      max-width: 680px;
+      margin-bottom: 30px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+      margin-bottom: 26px;
+    }
+
+    .btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 50px;
+      padding: 13px 21px;
+      border-radius: 999px;
+      font-weight: 800;
+      border: 2px solid transparent;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 9px 25px rgba(0,0,0,0.18);
+    }
+
+    .btn-gold {
+      background: var(--gold);
+      color: var(--purple-dark);
+    }
+
+    .btn-outline {
+      border-color: rgba(255,255,255,0.55);
+      color: var(--white);
+    }
+
+    .hero-note {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.67);
+    }
+
+    .hero-card {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 25px;
+      padding: 30px;
+      box-shadow: 0 25px 60px rgba(0,0,0,0.2);
+    }
+
+    .hero-card-label {
+      color: var(--gold-light);
+      font-size: 0.78rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1.4px;
+      margin-bottom: 15px;
+    }
+
+    .hero-card h2 {
+      font-size: 1.7rem;
+      line-height: 1.2;
+      margin-bottom: 17px;
+    }
+
+    .hero-card ul {
+      list-style: none;
+    }
+
+    .hero-card li {
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      color: rgba(255,255,255,0.86);
+    }
+
+    .hero-card li:last-child {
+      border-bottom: 0;
+    }
+
+    .hero-card li::before {
+      content: "✓";
+      color: var(--gold-light);
+      font-weight: 900;
+      margin-right: 9px;
+    }
+
+    /* GENERAL SECTIONS */
+
+    section {
+      padding: 78px 0;
+    }
+
+    .section-heading {
+      max-width: 760px;
+      margin-bottom: 42px;
+    }
+
+    .section-heading.center {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .section-label {
+      color: var(--emerald);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-size: 0.78rem;
+      font-weight: 900;
+      margin-bottom: 9px;
+    }
+
+    h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.12;
+      margin-bottom: 15px;
+      color: var(--purple-dark);
+    }
+
+    .section-heading p {
+      color: var(--gray);
+      font-size: 1rem;
+    }
+
+    /* AUDIENCE */
+
+    .audience {
+      background: var(--cream);
+    }
+
+    .audience-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 17px;
+    }
+
+    .audience-card {
+      background: var(--white);
+      padding: 25px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      border-top: 4px solid var(--gold);
+    }
+
+    .audience-card h3 {
+      color: var(--purple-dark);
+      font-size: 1.05rem;
+      margin-bottom: 8px;
+    }
+
+    .audience-card p {
+      color: var(--gray);
+      font-size: 0.9rem;
+    }
+
+    /* PROBLEM */
+
+    .problem-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 45px;
+      align-items: center;
+    }
+
+    .problem-list {
+      list-style: none;
+    }
+
+    .problem-list li {
+      padding: 15px 0;
+      border-bottom: 1px solid var(--light-gray);
+      color: var(--gray);
+    }
+
+    .problem-list li::before {
+      content: "→";
+      color: var(--emerald);
+      font-weight: 900;
+      margin-right: 10px;
+    }
+
+    .problem-box {
+      background: var(--purple-dark);
+      color: var(--white);
+      border-radius: 25px;
+      padding: 35px;
+      box-shadow: var(--shadow);
+    }
+
+    .problem-box h3 {
+      color: var(--gold-light);
+      font-size: 1.65rem;
+      margin-bottom: 15px;
+    }
+
+    .problem-box p {
+      color: rgba(255,255,255,0.8);
+    }
+
+    /* BENEFITS */
+
+    .benefit-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .benefit-card {
+      padding: 27px;
+      border: 1px solid var(--light-gray);
+      border-radius: var(--radius);
+      background: var(--white);
+    }
+
+    .benefit-number {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: rgba(8,127,91,0.1);
+      color: var(--emerald);
+      font-weight: 900;
+      margin-bottom: 17px;
+    }
+
+    .benefit-card h3 {
+      color: var(--purple-dark);
+      margin-bottom: 8px;
+    }
+
+    .benefit-card p {
+      color: var(--gray);
+      font-size: 0.92rem;
+    }
+
+    /* PRODUCT */
+
+    .product-section {
+      background: var(--cream);
+    }
+
+    .inside-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .inside-item {
+      background: var(--white);
+      padding: 24px;
+      border-radius: var(--radius);
+      box-shadow: 0 8px 25px rgba(36,17,63,0.07);
+    }
+
+    .inside-item h3 {
+      color: var(--purple-dark);
+      margin-bottom: 7px;
+    }
+
+    .inside-item p {
+      color: var(--gray);
+      font-size: 0.92rem;
+    }
+
+    .inside-item::before {
+      content: "✓";
+      color: var(--emerald);
+      font-weight: 900;
+      margin-right: 8px;
+    }
+
+    /* PRICING */
+
+    .pricing {
+      background: var(--white);
+    }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      align-items: stretch;
+    }
+
+    .price-card {
+      border: 1px solid var(--light-gray);
+      border-radius: 22px;
+      padding: 30px 25px;
+      display: flex;
+      flex-direction: column;
+      background: var(--white);
+      position: relative;
+    }
+
+    .price-card.featured {
+      border: 2px solid var(--gold);
+      box-shadow: var(--shadow);
+      transform: translateY(-7px);
+    }
+
+    .popular {
+      position: absolute;
+      top: -14px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--gold);
+      color: var(--purple-dark);
+      border-radius: 999px;
+      padding: 6px 15px;
+      font-size: 0.72rem;
+      font-weight: 900;
+      white-space: nowrap;
+      text-transform: uppercase;
+      letter-spacing: 0.7px;
+    }
+
+    .price-card h3 {
+      color: var(--purple-dark);
+      font-size: 1.35rem;
+      margin-bottom: 8px;
+    }
+
+    .price {
+      font-size: 2.1rem;
+      font-weight: 900;
+      color: var(--purple-dark);
+      margin: 9px 0 15px;
+    }
+
+    .price-card > p {
+      color: var(--gray);
+      font-size: 0.9rem;
+      min-height: 65px;
+    }
+
+    .price-list {
+      list-style: none;
+      margin: 20px 0 25px;
+      flex-grow: 1;
+    }
+
+    .price-list li {
+      padding: 9px 0;
+      border-bottom: 1px solid var(--light-gray);
+      font-size: 0.87rem;
+      color: var(--gray);
+    }
+
+    .price-list li::before {
+      content: "✓";
+      color: var(--emerald);
+      font-weight: 900;
+      margin-right: 8px;
+    }
+
+    .price-card .btn {
+      width: 100%;
+    }
+
+    .btn-purple {
+      background: var(--purple-dark);
+      color: var(--white);
+    }
+
+    .btn-green {
+      background: var(--emerald);
+      color: var(--white);
+    }
+
+    .price-note {
+      text-align: center;
+      margin-top: 30px;
+      color: var(--gray);
+      font-size: 0.84rem;
+    }
+
+    /* HOW IT WORKS */
+
+    .steps {
+      background: var(--cream);
+    }
+
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .step {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .step-number {
+      width: 55px;
+      height: 55px;
+      margin: 0 auto 17px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--purple-dark);
+      color: var(--gold-light);
+      font-weight: 900;
+      font-size: 1.1rem;
+    }
+
+    .step h3 {
+      color: var(--purple-dark);
+      margin-bottom: 7px;
+    }
+
+    .step p {
+      color: var(--gray);
+      font-size: 0.88rem;
+    }
+
+    /* TRUST */
+
+    .trust {
+      background: var(--purple-dark);
+      color: var(--white);
+    }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .trust h2 {
+      color: var(--white);
+    }
+
+    .trust p {
+      color: rgba(255,255,255,0.76);
+      margin-bottom: 14px;
+    }
+
+    .trust-list {
+      list-style: none;
+    }
+
+    .trust-list li {
+      padding: 11px 0;
+      color: rgba(255,255,255,0.82);
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .trust-list li::before {
+      content: "✓";
+      color: var(--gold-light);
+      font-weight: 900;
+      margin-right: 9px;
+    }
+
+    /* FINAL CTA */
+
+    .final-cta {
+      text-align: center;
+      background:
+        radial-gradient(circle at center, rgba(212,175,55,0.15), transparent 35%),
+        var(--cream);
+    }
+
+    .final-cta h2 {
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .final-cta p {
+      max-width: 650px;
+      margin: 0 auto 25px;
+      color: var(--gray);
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: #160a26;
+      color: rgba(255,255,255,0.72);
+      padding: 45px 0 25px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.3fr 1fr 1fr;
+      gap: 35px;
+      padding-bottom: 30px;
+    }
+
+    footer h3 {
+      color: var(--white);
+      margin-bottom: 12px;
+      font-size: 1rem;
+    }
+
+    footer p,
+    footer a {
+      font-size: 0.86rem;
+      color: rgba(255,255,255,0.65);
+    }
+
+    footer a:hover {
+      color: var(--gold-light);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding-top: 20px;
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.48);
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 900px) {
+      .hero-grid,
+      .problem-grid,
+      .trust-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .audience-grid,
+      .steps-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .benefit-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .pricing-grid {
+        grid-template-columns: 1fr;
+        max-width: 560px;
+        margin: 0 auto;
+      }
+
+      .price-card.featured {
+        transform: none;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .hero {
+        padding-top: 60px;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .nav {
+        min-height: 65px;
+      }
+
+      .nav-links a:not(.nav-cta) {
+        display: none;
+      }
+
+      .nav-links {
+        gap: 0;
+      }
+
+      .hero {
+        padding: 55px 0;
+      }
+
+      .hero h1 {
+        letter-spacing: -1px;
+      }
+
+      section {
+        padding: 58px 0;
+      }
+
+      .audience-grid,
+      .benefit-grid,
+      .inside-grid,
+      .steps-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-buttons {
+        flex-direction: column;
+      }
+
+      .hero-buttons .btn {
+        width: 100%;
+      }
+
+      .hero-card {
+        padding: 24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container nav">
+
+      <a href="#home" class="brand">
+        AiDigital Solutions Arena
+        <span>Digital Commerce &amp; Knowledge Arena</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#product">Product</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#how-it-works">How It Works</a>
+        <a
+          href="https://selar.com/070m676959"
+          class="nav-cta"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Get the Toolkit
+        </a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <!-- HERO -->
+  <main id="home">
+
+    <section class="hero">
+      <div class="container hero-grid">
+
+        <div>
+          <div class="eyebrow">
+            ADSA Solutions · AI Prompts
+          </div>
+
+          <h1>
+            Stop Guessing What to Say.
+            <span>Start Using Better Prompts.</span>
+          </h1>
+
+          <p class="hero-text">
+            Meet <strong>The Naija Agents Fast Deal Closing Prompts</strong> —
+            a practical AI-powered resource created to help Nigerian real estate
+            agents handle prospecting, buyer conversations, follow-ups,
+            objections and deal-closing conversations with greater structure.
+          </p>
+
+          <div class="hero-buttons">
+            <a
+              href="https://selar.com/070m676959"
+              class="btn btn-gold"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Get the Complete Toolkit
+            </a>
+
+            <a
+              href="https://selar.com/89q65p9857"
+              class="btn btn-outline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Get Free Sample Chapter
+            </a>
+          </div>
+
+          <p class="hero-note">
+            Digital product · Instant access through Selar · Built for real estate agents
+          </p>
+        </div>
+
+
+        <div class="hero-card">
+
+          <div class="hero-card-label">
+            Built for the real estate sales conversation
+          </div>
+
+          <h2>
+            Turn everyday agent challenges into structured AI-assisted conversations.
+          </h2>
+
+          <ul>
+            <li>Find better ways to approach prospects</li>
+            <li>Start and continue buyer conversations</li>
+            <li>Follow up without sounding repetitive</li>
+            <li>Handle common objections more systematically</li>
+            <li>Move conversations toward the next step</li>
+          </ul>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- AUDIENCE -->
+    <section class="audience">
+      <div class="container">
+
+        <div class="section-heading center">
+          <div class="section-label">Who It's For</div>
+
+          <h2>
+            Built for Agents at Different Stages
+          </h2>
+
+          <p>
+            Whether you are starting out or already working with property buyers,
+            the resource is designed to give you practical prompts you can adapt
+            to your own sales conversations.
+          </p>
+        </div>
+
+        <div class="audience-grid">
+
+          <div class="audience-card">
+            <h3>New Agents</h3>
+            <p>
+              Get practical starting points when you are unsure what to say
+              or how to approach a prospect.
+            </p>
+          </div>
+
+          <div class="audience-card">
+            <h3>Independent Agents</h3>
+            <p>
+              Build a more structured approach to prospecting, follow-up
+              and buyer communication.
+            </p>
+          </div>
+
+          <div class="audience-card">
+            <h3>Experienced Agents</h3>
+            <p>
+              Add AI-assisted prompts to your existing sales and communication
+              workflow.
+            </p>
+          </div>
+
+          <div class="audience-card">
+            <h3>Luxury &amp; Property Agents</h3>
+            <p>
+              Adapt professional conversation prompts to different property
+              and client situations.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- PROBLEM -->
+    <section>
+      <div class="container problem-grid">
+
+        <div>
+          <div class="section-label">The Challenge</div>
+
+          <h2>
+            The hardest part is often knowing what to say next.
+          </h2>
+
+          <p style="color: var(--gray); margin-bottom: 20px;">
+            Real estate conversations can move quickly. Agents may need to
+            generate leads, respond to enquiries, follow up, answer objections
+            and keep prospects engaged — often while managing several prospects
+            at the same time.
+          </p>
+
+          <ul class="problem-list">
+            <li>Not knowing how to start a conversation with a prospect</li>
+            <li>Struggling to keep a buyer engaged</li>
+            <li>Running out of ideas for follow-up messages</li>
+            <li>Finding it difficult to respond to objections</li>
+            <li>Needing practical wording for different sales situations</li>
+          </ul>
+        </div>
+
+        <div class="problem-box">
+
+          <h3>
+            A prompt gives you a starting point.
+          </h3>
+
+          <p>
+            Instead of staring at a blank chat box and wondering what to ask,
+            use structured prompts to help guide your AI tool toward the type
+            of response, message, idea or sales support you need.
+          </p>
+
+          <p style="margin-top: 18px;">
+            You can then review, personalize and adapt the output to fit your
+            actual prospect, property and professional style.
+          </p>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- BENEFITS -->
+    <section class="product-section" id="product">
+      <div class="container">
+
+        <div class="section-heading center">
+          <div class="section-label">What It Helps You Do</div>
+
+          <h2>
+            Practical Support for the Real Estate Sales Process
+          </h2>
+
+          <p>
+            Use the prompts as starting points for your AI-assisted workflow,
+            then customize the results for your specific situation.
+          </p>
+        </div>
+
+        <div class="benefit-grid">
+
+          <div class="benefit-card">
+            <div class="benefit-number">01</div>
+            <h3>Prospecting</h3>
+            <p>
+              Develop conversation ideas and approaches for reaching and
+              engaging potential property buyers.
+            </p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-number">02</div>
+            <h3>Buyer Conversations</h3>
+            <p>
+              Use structured prompts to help you prepare responses and
+              questions for different buyer situations.
+            </p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-number">03</div>
+            <h3>Follow-Up</h3>
+            <p>
+              Generate follow-up ideas that you can adapt according to the
+              prospect, property and stage of the conversation.
+            </p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-number">04</div>
+            <h3>Objections</h3>
+            <p>
+              Explore possible ways to respond to common concerns while keeping
+              your communication professional and relevant.
+            </p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-number">05</div>
+            <h3>Deal Conversations</h3>
+            <p>
+              Prepare conversation prompts designed to help move qualified
+              prospects toward an appropriate next step.
+            </p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-number">06</div>
+            <h3>AI-Assisted Workflow</h3>
+            <p>
+              Use prompts with AI tools such as ChatGPT and Claude, then edit
+              the output so it reflects your own voice and situation.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- WHAT'S INSIDE -->
+    <section>
+      <div class="container">
+
+        <div class="section-heading">
+          <div class="section-label">What's Inside</div>
+
+          <h2>
+            Choose the Level of Access That Fits You
+          </h2>
+
+          <p>
+            The launch offers three options so customers can choose between
+            trying the sample, getting the core materials, or getting the
+            complete toolkit.
+          </p>
+        </div>
+
+        <div class="inside-grid">
+
+          <div class="inside-item">
+            <h3>The Book</h3>
+            <p>
+              The main prompt resource designed around practical real estate
+              sales situations.
+            </p>
+          </div>
+
+          <div class="inside-item">
+            <h3>Quick-Start Cheat Sheet</h3>
+            <p>
+              A practical reference designed to help you get started quickly.
+            </p>
+          </div>
+
+          <div class="inside-item">
+            <h3>Editable Materials</h3>
+            <p>
+              Selected bundles include editable DOCX versions of the applicable
+              materials.
+            </p>
+          </div>
+
+          <div class="inside-item">
+            <h3>Lead &amp; Deal Pipe Tracker</h3>
+            <p>
+              Included in the Agent Complete Toolkit to support your lead and
+              deal tracking workflow.
+            </p>
+          </div>
+
+          <div class="inside-item">
+            <h3>WhatsApp Status &amp; Stories Template</h3>
+            <p>
+              Included in the Agent Complete Toolkit for your property marketing
+              workflow.
+            </p>
+          </div>
+
+          <div class="inside-item">
+            <h3>Social Media Template</h3>
+            <p>
+              Included in the Agent Complete Toolkit as an additional marketing
+              resource.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- PRICING -->
+    <section class="pricing" id="pricing">
+      <div class="container">
+
+        <div class="section-heading center">
+          <div class="section-label">Choose Your Option</div>
+
+          <h2>
+            Start With What You Need
+          </h2>
+
+          <p>
+            All purchases are handled through Selar.
+            Review the contents of each option before purchasing.
+          </p>
+        </div>
+
+        <div class="pricing-grid">
+
+          <!-- FREE SAMPLE -->
+          <div class="price-card">
+
+            <h3>Free Sample Chapter</h3>
+
+            <div class="price">₦0</div>
+
+            <p>
+              Explore a sample of the product before deciding whether to get
+              one of the full purchase options.
+            </p>
+
+            <ul class="price-list">
+              <li>Sample chapter</li>
+              <li>Preview the product approach</li>
+              <li>No payment required</li>
+            </ul>
+
+            <a
+              href="https://selar.com/89q65p9857"
+              class="btn btn-purple"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Get Free Sample
+            </a>
+
+          </div>
+
+
+          <!-- AGENT ESSENTIALS -->
+          <div class="price-card">
+
+            <h3>Agent Essentials</h3>
+
+            <div class="price">₦11,900</div>
+
+            <p>
+              The core package for agents who want the main book and
+              quick-start materials.
+            </p>
+
+            <ul class="price-list">
+              <li>PDF of The Book</li>
+              <li>Editable DOCX of The Book</li>
+              <li>PDF Quick-Start Cheat Sheet</li>
+              <li>Editable DOCX Quick-Start Cheat Sheet</li>
+            </ul>
+
+            <a
+              href="https://selar.com/6p2j3l2ev8"
+              class="btn btn-purple"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Get Agent Essentials
+            </a>
+
+          </div>
+
+
+          <!-- COMPLETE TOOLKIT -->
+          <div class="price-card featured">
+
+            <div class="popular">Complete Toolkit</div>
+
+            <h3>Agent Complete Toolkit</h3>
+
+            <div class="price">₦16,900</div>
+
+            <p>
+              The complete package combining the Agent Essentials materials
+              with additional lead, marketing and workflow resources.
+            </p>
+
+            <ul class="price-list">
+              <li>Everything in Agent Essentials</li>
+              <li>Lead &amp; Deal Pipe Tracker</li>
+              <li>WhatsApp Status &amp; Stories Template</li>
+              <li>Social Media Template</li>
+            </ul>
+
+            <a
+              href="https://selar.com/070m676959"
+              class="btn btn-green"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Get Complete Toolkit
+            </a>
+
+          </div>
+
+        </div>
+
+        <p class="price-note">
+          Please review the contents and selected option carefully before completing
+          your purchase.
+        </p>
+
+      </div>
+    </section>
+
+
+    <!-- HOW IT WORKS -->
+    <section class="steps" id="how-it-works">
+      <div class="container">
+
+        <div class="section-heading center">
+          <div class="section-label">Simple Process</div>
+
+          <h2>
+            How It Works
+          </h2>
+
+          <p>
+            Getting started takes just a few steps.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+
+          <div class="step">
+            <div class="step-number">1</div>
+            <h3>Choose</h3>
+            <p>
+              Select the sample, Agent Essentials or Complete Toolkit.
+            </p>
+          </div>
+
+          <div class="step">
+            <div class="step-number">2</div>
+            <h3>Purchase</h3>
+            <p>
+              Complete your purchase securely through the relevant Selar page.
+            </p>
+          </div>
+
+          <div class="step">
+            <div class="step-number">3</div>
+            <h3>Access</h3>
+            <p>
+              Follow the delivery instructions provided after your purchase.
+            </p>
+          </div>
+
+          <div class="step">
+            <div class="step-number">4</div>
+            <h3>Apply</h3>
+            <p>
+              Adapt the prompts and resources to your own real estate workflow.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- TRUST / EXPECTATIONS -->
+    <section class="trust">
+      <div class="container trust-grid">
+
+        <div>
+          <div class="section-label" style="color: var(--gold-light);">
+            Before You Buy
+          </div>
+
+          <h2>
+            Clear Products. Clear Options. Clear Expectations.
+          </h2>
+
+          <p>
+            ADSA is building practical digital products designed to help
+            professionals work more effectively with modern digital and AI tools.
+          </p>
+
+          <p>
+            This product is a practical resource. AI-generated responses should
+            always be reviewed, personalized and checked for accuracy before
+            being used with real clients.
+          </p>
+        </div>
+
+        <div>
+
+          <ul class="trust-list">
+            <li>Digital product delivered through Selar</li>
+            <li>Choose the exact bundle you want before purchasing</li>
+            <li>Editable materials are included only where specified</li>
+            <li>Prompt outputs should be reviewed before client use</li>
+            <li>Product support is available through ADSA support channels</li>
+          </ul>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- FINAL CTA -->
+    <section class="final-cta">
+      <div class="container">
+
+        <div class="section-label">
+          Ready to Get Started?
+        </div>
+
+        <h2>
+          Give Your Real Estate Conversations a More Structured Starting Point.
+        </h2>
+
+        <p>
+          Start with the free sample, get the essential materials, or choose
+          the complete toolkit.
+        </p>
+
+        <div class="hero-buttons" style="justify-content: center;">
+
+          <a
+            href="https://selar.com/89q65p9857"
+            class="btn btn-purple"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Get Free Sample
+          </a>
+
+          <a
+            href="https://selar.com/070m676959"
+            class="btn btn-green"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Get Complete Toolkit
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div>
+          <h3>AiDigital Solutions Arena</h3>
+          <p>
+            Digital Commerce &amp; Knowledge Arena.
+          </p>
+          <p style="margin-top: 10px;">
+            Building practical digital solutions, products and knowledge
+            resources for a connected digital future.
+          </p>
+        </div>
+
+        <div>
+          <h3>Current Solution</h3>
+          <p>
+            <a href="#product">
+              AI Prompts
+            </a>
+          </p>
+          <p>
+            <a href="#pricing">
+              The Naija Agents Fast Deal Closing Prompts
+            </a>
+          </p>
+        </div>
+
+        <div>
+          <h3>Explore ADSA</h3>
+          <p><a href="#home">Home</a></p>
+          <p><a href="#product">Solutions</a></p>
+          <p><a href="#pricing">Pricing</a></p>
+          <p><a href="#how-it-works">Resources</a></p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        © 2026 AiDigital Solutions Arena (ADSA). All rights reserved.
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>
